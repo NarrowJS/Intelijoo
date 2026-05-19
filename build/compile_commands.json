@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/include -isystem C:/Qt/6.11.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.11.0/mingw_64/include -isystem C:/Qt/6.11.0/mingw_64/include/QtCore -isystem C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.11.0/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\IntelliJoo.dir\\IntelliJoo_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\andre\\Documents\\cs\\FinalProject\\Intelijoo\\build\\IntelliJoo_autogen\\mocs_compilation.cpp",
+  "file": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/mocs_compilation.cpp",
+  "output": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo.dir/IntelliJoo_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/include -isystem C:/Qt/6.11.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.11.0/mingw_64/include -isystem C:/Qt/6.11.0/mingw_64/include/QtCore -isystem C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.11.0/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\IntelliJoo.dir\\main.cpp.obj -c C:\\Users\\andre\\Documents\\cs\\FinalProject\\Intelijoo\\main.cpp",
+  "file": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/main.cpp",
+  "output": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/include -isystem C:/Qt/6.11.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.11.0/mingw_64/include -isystem C:/Qt/6.11.0/mingw_64/include/QtCore -isystem C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.11.0/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\IntelliJoo.dir\\fileHandler.cpp.obj -c C:\\Users\\andre\\Documents\\cs\\FinalProject\\Intelijoo\\fileHandler.cpp",
+  "file": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/fileHandler.cpp",
+  "output": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo.dir/fileHandler.cpp.obj"
+},
+{
+  "directory": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/include -isystem C:/Qt/6.11.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.11.0/mingw_64/include -isystem C:/Qt/6.11.0/mingw_64/include/QtCore -isystem C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.11.0/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\IntelliJoo.dir\\MainWindow.cpp.obj -c C:\\Users\\andre\\Documents\\cs\\FinalProject\\Intelijoo\\MainWindow.cpp",
+  "file": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.cpp",
+  "output": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo.dir/MainWindow.cpp.obj"
+}
+]

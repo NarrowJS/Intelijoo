@@ -1,0 +1,5 @@
+C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo.dir
+C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/edit_cache.dir
+C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/rebuild_cache.dir
+C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo_autogen_timestamp_deps.dir
+C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo_autogen.dir
