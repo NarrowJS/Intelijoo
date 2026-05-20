@@ -44,42 +44,38 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     gridLayout->addWidget(m_fileListWidget, 0,0, 0, 1);
 
 
-    
+    // Update folder path variable
     QObject::connect(m_pathInput, &QLineEdit::textChanged, this, [this](const QString &newPath) {
         m_folderPath = newPath;
     });
 
-    QObject::connect(m_textEdit, &QPlainTextEdit::textChanged, this, [this](const QString &newText) {
-        m_fileText = newText;
+    // update the file text variable
+    QObject::connect(m_textEdit, &QPlainTextEdit::textChanged, this, [this]() {
+        m_fileText = m_textEdit->toPlainText();
     });
 
 
+    // Load file button functionality
     QObject::connect(loadFileBtn, &QPushButton::clicked , this, [this]() {
         QWidget *updatedFileListWidget = new QWidget();
-        QLayoutItem *replacingWidget = gridLayout->itemAtPosition(0,0);
-        gridLayout->replaceWidget(replacingWidget->widget(), loadFileList(m_folderPath.toStdString()));
+        QListWidget *replacingWidget = loadFileList(m_folderPath.toStdString());
        
+
+        gridLayout->replaceWidget(m_fileListWidget, replacingWidget);
+        m_fileListWidget = replacingWidget;
+
+        QObject::connect(m_fileListWidget, &QListWidget::itemClicked, this, onFileListItemClicked);
+
     });
 
-    QObject::connect(m_fileListWidget, &QListWidget::itemClicked, this, [this](const QListWidgetItem *item)  {
-        m_filePath = item->text();
-        m_textEdit->setPlainText(loadFile(m_filePath.toStdString()));
-    });
+    // Link the file list item click event to update the current file path
+    QObject::connect(m_fileListWidget, &QListWidget::itemClicked, this, onFileListItemClicked);
 
+    // Save file button functionality
     QObject::connect(saveFileBtn, &QPushButton::clicked , this, [this]() {
         saveFile(m_filePath.toStdString(), m_fileText.toStdString());
        
     });
-
-    
-
-
-
-
-
-
-    
-
 
   
 
@@ -87,3 +83,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     setCentralWidget(container);
 
 }
+
+
+// Replace old file list with the new one by reloading it 
+void MainWindow::onFileListItemClicked(QListWidgetItem *item) {
+    std::string itemText = item->text().toStdString();
+    m_filePath = QString::fromStdString(m_folderPath.toStdString() + itemText);
+
+    std::cout << m_filePath.toStdString() << std::endl;
+    m_textEdit->setPlainText(loadFile(m_filePath.toStdString()));
+};

@@ -18,6 +18,9 @@ class MainWindow : public QMainWindow {
     public:
         MainWindow(QWidget *parent = nullptr);
     
+    public slots:
+        void onFileListItemClicked(QListWidgetItem *item);
+    
     private:
         QLineEdit *m_pathInput;
         QPlainTextEdit *m_textEdit;
@@ -27,6 +30,6 @@ class MainWindow : public QMainWindow {
         QListWidget *m_fileListWidget;
         QGridLayout *gridLayout;
 
-    signals:
-        void fileTextChanged();
+    
+        
 };

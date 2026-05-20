@@ -6,6 +6,8 @@
 #include <QListWidgetItem>
 #include <QListWidget>
 #include <filesystem>
+#include <regex>
+
 using namespace std;
 
 QString loadFile(string filePath)
@@ -38,8 +40,9 @@ QListWidget *loadFileList(string folderPath)
     {
         std::cout << entry.path() << std:: endl;
         QListWidgetItem *fileItem = new QListWidgetItem();
-        QString fileTitle = QString::fromStdString(entry.path().string());
-        fileItem->setText(fileTitle);
+        string fileTitle = entry.path().string();
+
+        fileItem->setText(QString::fromStdString((fileTitle.substr(folderPath.length()))));
         fileList->addItem(fileItem);
     }
 
