@@ -12,6 +12,7 @@
 #include <QListWidget>
 #include <QMainWindow>
 #include <QListWidgetItem>
+#include <regex>
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -20,6 +21,7 @@ class MainWindow : public QMainWindow {
     
     public slots:
         void onFileListItemClicked(QListWidgetItem *item);
+        void updateFileList();
     
     private:
         QLineEdit *m_pathInput;

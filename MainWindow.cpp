@@ -12,22 +12,23 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     
 
     QPushButton *saveFileBtn = new QPushButton("Save");
-    saveFileBtn->show();
 
     m_textEdit = new QPlainTextEdit();
-    m_textEdit->show();
 
     m_pathInput = new QLineEdit();
-    m_pathInput->show();
 
     QPushButton *loadFileBtn = new QPushButton("Load");
-    loadFileBtn->show();
+
+    QPushButton *indentFileBtn = new QPushButton("Indent");
 
     QPushButton *compileFileBtn = new QPushButton("Compile");
-    compileFileBtn->show();
 
     QString loadedText = loadFile(filePath);
     m_textEdit->setPlainText(loadedText);
+
+
+    // go back one directory
+    QPushButton *navigateBackBtn = new QPushButton("<");
 
 
     QWidget *fileList = new QWidget();
@@ -36,11 +37,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
 
     gridLayout->setSizeConstraint(QLayout::SetMaximumSize);
-    gridLayout->addWidget(m_pathInput, 0, 1);
-    gridLayout->addWidget(loadFileBtn, 0, 2);
-    gridLayout->addWidget(saveFileBtn, 0, 3);
-    gridLayout->addWidget(compileFileBtn, 0, 4);
-    gridLayout->addWidget(m_textEdit, 1, 1, 1, 4);
+    gridLayout->addWidget(navigateBackBtn, 0, 1);
+    gridLayout->addWidget(indentFileBtn, 0, 2);
+    gridLayout->addWidget(m_pathInput, 0, 3);
+    gridLayout->addWidget(loadFileBtn, 0, 4);
+    gridLayout->addWidget(saveFileBtn, 0, 5);
+    gridLayout->addWidget(compileFileBtn, 0, 6);
+    gridLayout->addWidget(m_textEdit, 1, 1, 1, 6);
     gridLayout->addWidget(m_fileListWidget, 0,0, 0, 1);
 
 
@@ -57,14 +60,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
     // Load file button functionality
     QObject::connect(loadFileBtn, &QPushButton::clicked , this, [this]() {
-        QWidget *updatedFileListWidget = new QWidget();
-        QListWidget *replacingWidget = loadFileList(m_folderPath.toStdString());
-       
+        updateFileList();
 
-        gridLayout->replaceWidget(m_fileListWidget, replacingWidget);
-        m_fileListWidget = replacingWidget;
+    });
 
-        QObject::connect(m_fileListWidget, &QListWidget::itemClicked, this, onFileListItemClicked);
+    // Indent file button functionality
+    QObject::connect(indentFileBtn, &QPushButton::clicked , this, [this]() {
+        std::string data = autoIndent(m_filePath.toStdString());
+        m_textEdit->setPlainText(QString::fromStdString(data));
 
     });
 
@@ -77,12 +80,30 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
        
     });
 
-  
+    QObject::connect(navigateBackBtn, &QPushButton::clicked , this, [this]() {
+
+       // remove the last folder from the path
+        std::string path = m_folderPath.toStdString();
+        m_folderPath = QString::fromStdString(path.substr(0,path.find_last_of('\\')));
+        updateFileList();
+
+    });
 
     container->setLayout(gridLayout);
     setCentralWidget(container);
 
 }
+
+void MainWindow::updateFileList()
+{
+    QListWidget *replacingWidget = loadFileList(m_folderPath.toStdString());
+
+    gridLayout->replaceWidget(m_fileListWidget, replacingWidget);
+    m_fileListWidget = replacingWidget;
+
+    QObject::connect(m_fileListWidget, &QListWidget::itemClicked, this, onFileListItemClicked);
+}
+
 
 
 // Replace old file list with the new one by reloading it 
@@ -91,5 +112,14 @@ void MainWindow::onFileListItemClicked(QListWidgetItem *item) {
     m_filePath = QString::fromStdString(m_folderPath.toStdString() + itemText);
 
     std::cout << m_filePath.toStdString() << std::endl;
-    m_textEdit->setPlainText(loadFile(m_filePath.toStdString()));
+
+    // check if the item is a folder
+    if (!m_filePath.contains("."))
+    {
+        m_folderPath = m_filePath;
+        updateFileList();
+
+    } else {
+        m_textEdit->setPlainText(loadFile(m_filePath.toStdString()));
+    }
 };

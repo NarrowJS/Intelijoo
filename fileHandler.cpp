@@ -61,3 +61,46 @@ void saveFile(string filePath, string data)
     }
 }
 
+
+
+
+
+string autoIndent(string filePath)
+{
+    string data = "";
+    fstream FileReader;
+
+    int indentMultiplier = 0;
+    FileReader.open(filePath, ios::in);
+
+    if (FileReader.is_open())
+    {
+        string line;
+        while (getline(FileReader, line))
+        {
+            cout << line << endl;
+
+           
+           if (line == "{")
+           {
+            indentMultiplier++;
+           } else if (line == "}")
+           {
+            indentMultiplier--;
+           }
+
+           for (int i = 0; i<indentMultiplier; i++)
+            {
+                line = "   " + line;
+            }
+
+            data+= line + "\n";
+            
+        }
+        FileReader.close();
+    }
+
+    return data;
+}
+
+
