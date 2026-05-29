@@ -25,6 +25,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
     QString loadedText = loadFile(filePath);
     m_textEdit->setPlainText(loadedText);
+    m_textEdit->setMinimumSize(500,400);
 
 
     // go back one directory
@@ -45,6 +46,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     gridLayout->addWidget(compileFileBtn, 0, 6);
     gridLayout->addWidget(m_textEdit, 1, 1, 1, 6);
     gridLayout->addWidget(m_fileListWidget, 0,0, 0, 1);
+    
+
 
 
     // Update folder path variable
@@ -69,6 +72,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
         std::string data = autoIndent(m_filePath.toStdString());
         m_textEdit->setPlainText(QString::fromStdString(data));
 
+        saveFile(m_filePath.toStdString(), m_fileText.toStdString());
+
     });
 
     // Link the file list item click event to update the current file path
@@ -78,6 +83,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     QObject::connect(saveFileBtn, &QPushButton::clicked , this, [this]() {
         saveFile(m_filePath.toStdString(), m_fileText.toStdString());
        
+    });
+
+    QObject::connect(compileFileBtn, &QPushButton::clicked , this, [this]() {
+        compileFile(m_filePath.toStdString());
+        updateFileList();
     });
 
     QObject::connect(navigateBackBtn, &QPushButton::clicked , this, [this]() {

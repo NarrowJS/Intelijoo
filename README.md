@@ -42,5 +42,7 @@ To run the executable, go to the releases tab and download the latest release wh
 	- QListView: https://doc.qt.io/qt-6/qml-qtquick-listview.html
 	- Calculator example app: https://doc.qt.io/qt-6/qtdoc-demos-calqlatr-example.html
 - File handling
-	-	Reading and Writing to files: https://www.youtube.com/watch?v=Cz4fl-TUjVk
-	-	Streams: https://www.udacity.com/blog/c-streams/
+	- Reading and Writing to files: https://www.youtube.com/watch?v=Cz4fl-TUjVk
+	- Streams: https://www.udacity.com/blog/c-streams/
+	- Running shell scripts: https://www.geeksforgeeks.org/cpp/system-call-in-c/
+	- Conversion: https://www.geeksforgeeks.org/cpp/convert-string-char-array-cpp/

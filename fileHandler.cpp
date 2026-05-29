@@ -70,7 +70,10 @@ string autoIndent(string filePath)
     string data = "";
     fstream FileReader;
 
+    int lineNum = 0;
+    int openBraceCount = 0;
     int indentMultiplier = 0;
+
     FileReader.open(filePath, ios::in);
 
     if (FileReader.is_open())
@@ -80,20 +83,50 @@ string autoIndent(string filePath)
         {
             cout << line << endl;
 
-           
-           if (line == "{")
-           {
-            indentMultiplier++;
-           } else if (line == "}")
-           {
-            indentMultiplier--;
-           }
+            lineNum++;
 
-           for (int i = 0; i<indentMultiplier; i++)
+            // remove any spaces at the front of the line to have clean indents
+            while (line.substr(0, 1) == " ")
             {
-                line = "   " + line;
+                line = line.substr(1, line.length() - 1);
+                cout << "line_"+line << endl;
             }
 
+            // saving the unpadded string state
+            string lineTemp = line;
+            
+            cout << indentMultiplier << endl;
+
+           // update the amount of spaces based on how nested the line is
+            for (int i = 0; i<indentMultiplier; i++)
+            {
+                line = "    " + line;
+            }
+
+            cout << "linetemp:"+lineTemp << endl;
+
+            // find instead of == to account for any trailing spaces after the braces
+            if (lineTemp.find("{") != -1)
+            {
+                indentMultiplier++;  
+                cout << "increased multiplier" << endl;
+            } else if (lineTemp.find("}") != -1)
+            {
+                indentMultiplier--; 
+                cout << "decreased multiplier" << endl;
+                
+                if (indentMultiplier > 0)
+                {
+                    for (int i = 0; i<indentMultiplier; i++)
+                    {
+                        line = "    " + lineTemp;
+                    }
+                } else {
+                    line = lineTemp;
+                }
+            }
+
+            // save the line
             data+= line + "\n";
             
         }
@@ -104,3 +137,15 @@ string autoIndent(string filePath)
 }
 
 
+int compileFile(string path)
+{   
+    const string command = "javac "+path;
+    int res = system(command.c_str());
+
+    if (res == 0)
+        cout << "success" << endl;
+    else
+        cout << "compile failed" << endl;
+
+    return 0;
+}
