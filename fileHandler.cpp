@@ -149,3 +149,16 @@ int compileFile(string path)
 
     return 0;
 }
+
+int runFile(string path)
+{   
+    const string command = "java "+path;
+    int res = system(command.c_str());
+
+    if (res == 0)
+        cout << "success" << endl;
+    else
+        cout << "compile failed" << endl;
+
+    return 0;
+}

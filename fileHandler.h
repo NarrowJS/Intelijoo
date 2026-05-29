@@ -13,5 +13,6 @@ QListWidget *loadFileList(std::string folderPath);
 void saveFile(std::string filePath, std::string data);
 std::string autoIndent(std::string filePath);
 int compileFile(std::string path);
+int runFile(std::string path);
 
 #endif

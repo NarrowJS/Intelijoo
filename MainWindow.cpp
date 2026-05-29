@@ -23,6 +23,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
     QPushButton *compileFileBtn = new QPushButton("Compile");
 
+    QPushButton *runFileBtn = new QPushButton("Run");
+
+
+    QPlainTextEdit *newFileNameInput = new QPlainTextEdit("");
+    QPushButton *createFileBtn = new QPushButton("+");
+
+
+
     QString loadedText = loadFile(filePath);
     m_textEdit->setPlainText(loadedText);
     m_textEdit->setMinimumSize(500,400);
@@ -39,12 +47,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
     gridLayout->setSizeConstraint(QLayout::SetMaximumSize);
     gridLayout->addWidget(navigateBackBtn, 0, 1);
-    gridLayout->addWidget(indentFileBtn, 0, 2);
-    gridLayout->addWidget(m_pathInput, 0, 3);
-    gridLayout->addWidget(loadFileBtn, 0, 4);
-    gridLayout->addWidget(saveFileBtn, 0, 5);
-    gridLayout->addWidget(compileFileBtn, 0, 6);
-    gridLayout->addWidget(m_textEdit, 1, 1, 1, 6);
+    gridLayout->addWidget(createFileBtn, 0, 2);
+    gridLayout->addWidget(indentFileBtn, 0, 3);
+    gridLayout->addWidget(m_pathInput, 0, 4);
+    gridLayout->addWidget(loadFileBtn, 0, 5);
+    gridLayout->addWidget(saveFileBtn, 0, 6);
+    gridLayout->addWidget(compileFileBtn, 0, 7);
+    gridLayout->addWidget(runFileBtn, 0, 8);
+    gridLayout->addWidget(m_textEdit, 1, 1, 1,8);
     gridLayout->addWidget(m_fileListWidget, 0,0, 0, 1);
     
 
@@ -88,6 +98,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     QObject::connect(compileFileBtn, &QPushButton::clicked , this, [this]() {
         compileFile(m_filePath.toStdString());
         updateFileList();
+    });
+
+    QObject::connect(runFileBtn, &QPushButton::clicked , this, [this]() {
+        compileFile(m_filePath.toStdString());
     });
 
     QObject::connect(navigateBackBtn, &QPushButton::clicked , this, [this]() {
