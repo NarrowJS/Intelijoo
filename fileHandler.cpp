@@ -176,6 +176,7 @@ void createFile(string fileName, string folderPath)
         return;
     }
 
+    file.close();
 
 
     

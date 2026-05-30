@@ -14,6 +14,7 @@
 #include <QListWidgetItem>
 #include <regex>
 #include <QDialog>
+#include <QProcess>
 
 #include "createfilemodal.h"
 
@@ -25,6 +26,7 @@ class MainWindow : public QMainWindow {
     public slots:
         void onFileListItemClicked(QListWidgetItem *item);
         void updateFileList();
+        void runFile();
     
     private:
         QLineEdit *m_pathInput;
@@ -35,6 +37,8 @@ class MainWindow : public QMainWindow {
         QListWidget *m_fileListWidget;
         QGridLayout *gridLayout;
         CreateFileModal *m_newFileDialog;
+        QProcess *m_codeProcess;
+        QPushButton *m_runFileBtn;
 
     
         

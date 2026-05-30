@@ -23,7 +23,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
     QPushButton *compileFileBtn = new QPushButton("Compile");
 
-    QPushButton *runFileBtn = new QPushButton("Run");
+    m_runFileBtn = new QPushButton("Run");
 
 
     QPlainTextEdit *newFileNameInput = new QPlainTextEdit("");
@@ -55,11 +55,15 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     gridLayout->addWidget(loadFileBtn, 0, 5);
     gridLayout->addWidget(saveFileBtn, 0, 6);
     gridLayout->addWidget(compileFileBtn, 0, 7);
-    gridLayout->addWidget(runFileBtn, 0, 8);
+    gridLayout->addWidget(m_runFileBtn, 0, 8);
     gridLayout->addWidget(m_textEdit, 1, 1, 1,8);
     gridLayout->addWidget(m_fileListWidget, 0,0, 0, 1);
-    
 
+
+
+    
+    
+    m_codeProcess = new QProcess(parent);
 
 
     // Update folder path variable
@@ -102,9 +106,30 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
         updateFileList();
     });
 
-    QObject::connect(runFileBtn, &QPushButton::clicked , this, [this]() {
-        compileFile(m_filePath.toStdString());
+    QObject::connect(m_runFileBtn, &QPushButton::clicked , this, [this]() {
+        runFile();
     });
+
+    QObject::connect(m_codeProcess, &QProcess::started , this, [this]() {
+        std::cout << "started running the file" << std::endl;
+        m_runFileBtn->setText("Stop");
+        std::cout << m_codeProcess->readAllStandardOutput().toStdString() << std::endl;
+    });
+
+    QObject::connect(m_codeProcess, &QProcess::readyReadStandardOutput , this, [this]() {
+        std::cout << m_codeProcess->readAllStandardOutput().toStdString() << std::endl;
+    });
+
+     QObject::connect(m_codeProcess, &QProcess::readyReadStandardError , this, [this]() {
+        std::cout << m_codeProcess->readAllStandardError().toStdString() << std::endl;
+    });
+
+    QObject::connect(m_codeProcess, &QProcess::finished , this, [this]() {
+        m_runFileBtn->setText("Run");
+
+    });
+
+
 
     QObject::connect(createFileBtn, &QPushButton::clicked , this, [this]() {
         m_newFileDialog->show();
@@ -144,6 +169,15 @@ void MainWindow::updateFileList()
     QObject::connect(m_fileListWidget, &QListWidget::itemClicked, this, onFileListItemClicked);
 }
 
+
+void MainWindow::runFile()
+{
+    QStringList args;
+    
+    args << m_filePath;
+   
+    m_codeProcess->start(QString::fromStdString("java"), args);
+}
 
 
 // Replace old file list with the new one by reloading it 

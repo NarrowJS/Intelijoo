@@ -41,6 +41,7 @@ To run the executable, go to the releases tab and download the latest release wh
 	- QLineEdit: https://doc.qt.io/qt-6/qlineedit.html
 	- QListView: https://doc.qt.io/qt-6/qml-qtquick-listview.html
 	- Calculator example app: https://doc.qt.io/qt-6/qtdoc-demos-calqlatr-example.html
+	- Creating background processes: https://doc.qt.io/qt-6/qprocess.html
 - File handling
 	- Reading and Writing to files: https://www.youtube.com/watch?v=Cz4fl-TUjVk
 	- Streams: https://www.udacity.com/blog/c-streams/
