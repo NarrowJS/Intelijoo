@@ -2,6 +2,7 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/moc_predefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QList \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QProcess \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QRect \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QSize \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QSizeF \
@@ -92,6 +93,7 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtCore/qoverload.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qpair.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qpoint.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qrefcount.h \
