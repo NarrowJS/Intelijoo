@@ -41,6 +41,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     // go back one directory
     QPushButton *navigateBackBtn = new QPushButton("<");
 
+    m_terminalWidget = new QLabel("terminal eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+    m_terminalWidget->setMinimumSize(500,100);
+
 
     QWidget *fileList = new QWidget();
 
@@ -57,6 +60,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     gridLayout->addWidget(compileFileBtn, 0, 7);
     gridLayout->addWidget(m_runFileBtn, 0, 8);
     gridLayout->addWidget(m_textEdit, 1, 1, 1,8);
+    gridLayout->addWidget(m_terminalWidget, 2, 1, 1,8);
     gridLayout->addWidget(m_fileListWidget, 0,0, 0, 1);
 
 
@@ -98,18 +102,22 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     // Save file button functionality
     QObject::connect(saveFileBtn, &QPushButton::clicked , this, [this]() {
         saveFile(m_filePath.toStdString(), m_fileText.toStdString());
-       
+        
     });
 
+    // Compile button functionality
     QObject::connect(compileFileBtn, &QPushButton::clicked , this, [this]() {
         compileFile(m_filePath.toStdString());
         updateFileList();
     });
 
+    // Run file button functionality
     QObject::connect(m_runFileBtn, &QPushButton::clicked , this, [this]() {
         runFile();
     });
 
+
+    // File Running Process
     QObject::connect(m_codeProcess, &QProcess::started , this, [this]() {
         std::cout << "started running the file" << std::endl;
         m_runFileBtn->setText("Stop");
@@ -118,15 +126,16 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
     QObject::connect(m_codeProcess, &QProcess::readyReadStandardOutput , this, [this]() {
         std::cout << m_codeProcess->readAllStandardOutput().toStdString() << std::endl;
+        m_terminalWidget->setText(m_codeProcess->readAllStandardOutput());
     });
 
      QObject::connect(m_codeProcess, &QProcess::readyReadStandardError , this, [this]() {
         std::cout << m_codeProcess->readAllStandardError().toStdString() << std::endl;
+        m_terminalWidget->setText(QString::fromStdString(m_codeProcess->readAllStandardError().toStdString()));
     });
 
     QObject::connect(m_codeProcess, &QProcess::finished , this, [this]() {
         m_runFileBtn->setText("Run");
-
     });
 
 

@@ -175,6 +175,7 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpalette.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
+  C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpointingdevice.h \
@@ -203,6 +204,7 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QGridLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QInputDialog \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \
@@ -223,6 +225,7 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qinputdialog.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h \

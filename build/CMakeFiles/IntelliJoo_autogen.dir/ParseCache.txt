@@ -591,6 +591,7 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtGui/qpaintdevice.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtGui/qpalette.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h
+ mdp:C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtGui/qpixelformat.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtGui/qpixmap.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtGui/qpointingdevice.h
@@ -619,6 +620,7 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QGridLayout
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QInputDialog
+ mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLayout
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget
@@ -639,6 +641,7 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/qinputdialog.h
+ mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h

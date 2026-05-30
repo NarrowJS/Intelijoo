@@ -15,6 +15,7 @@
 #include <regex>
 #include <QDialog>
 #include <QProcess>
+#include <QLabel>
 
 #include "createfilemodal.h"
 
@@ -39,6 +40,7 @@ class MainWindow : public QMainWindow {
         CreateFileModal *m_newFileDialog;
         QProcess *m_codeProcess;
         QPushButton *m_runFileBtn;
+        QLabel *m_terminalWidget;
 
     
         
