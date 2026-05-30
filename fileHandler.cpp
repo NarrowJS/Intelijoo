@@ -162,3 +162,21 @@ int runFile(string path)
 
     return 0;
 }
+
+
+void createFile(string fileName, string folderPath)
+{
+    ofstream file;
+
+    string path = folderPath + "\\" + fileName;
+    file.open(path);
+
+    if (!file.is_open())
+    {
+        return;
+    }
+
+
+
+    
+}

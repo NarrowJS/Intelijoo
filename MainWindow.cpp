@@ -29,6 +29,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     QPlainTextEdit *newFileNameInput = new QPlainTextEdit("");
     QPushButton *createFileBtn = new QPushButton("+");
 
+    m_newFileDialog = new CreateFileModal();
+
 
 
     QString loadedText = loadFile(filePath);
@@ -104,6 +106,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
         compileFile(m_filePath.toStdString());
     });
 
+    QObject::connect(createFileBtn, &QPushButton::clicked , this, [this]() {
+        m_newFileDialog->show();
+    });
+
     QObject::connect(navigateBackBtn, &QPushButton::clicked , this, [this]() {
 
        // remove the last folder from the path
@@ -113,8 +119,18 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
     });
 
+
+    QObject::connect(m_newFileDialog, &QInputDialog::textValueSelected , this, [this](const QString &fileName) {
+        std::cout << fileName.toStdString() << std::endl;
+
+        createFile(fileName.toStdString(), m_folderPath.toStdString());
+        updateFileList();
+
+    });
+
     container->setLayout(gridLayout);
     setCentralWidget(container);
+    
 
 }
 
@@ -147,3 +163,4 @@ void MainWindow::onFileListItemClicked(QListWidgetItem *item) {
         m_textEdit->setPlainText(loadFile(m_filePath.toStdString()));
     }
 };
+

@@ -280,6 +280,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/andre/Documents/cs/FinalProject/Intelijoo/CreateFileModal.h",
+			"MU",
+			"EWIEGA46WW/moc_CreateFileModal.cpp",
+			null
+		],
+		[
 			"C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.h",
 			"MU",
 			"EWIEGA46WW/moc_MainWindow.cpp",
@@ -362,6 +368,11 @@
 	"SETTINGS_FILE" : "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/andre/Documents/cs/FinalProject/Intelijoo/CreateFileModal.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.cpp",
 			"MU",

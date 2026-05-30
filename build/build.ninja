@@ -89,6 +89,16 @@ build CMakeFiles/IntelliJoo.dir/MainWindow.cpp.obj: CXX_COMPILER__IntelliJoo_uns
   OBJECT_FILE_DIR = CMakeFiles\IntelliJoo.dir
   TARGET_SUPPORT_DIR = CMakeFiles\IntelliJoo.dir
 
+build CMakeFiles/IntelliJoo.dir/CreateFileModal.cpp.obj: CXX_COMPILER__IntelliJoo_unscanned_Debug C$:/Users/andre/Documents/cs/FinalProject/Intelijoo/CreateFileModal.cpp || cmake_object_order_depends_target_IntelliJoo
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\IntelliJoo.dir\CreateFileModal.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17
+  INCLUDES = -IC:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/include -isystem C:/Qt/6.11.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.11.0/mingw_64/include -isystem C:/Qt/6.11.0/mingw_64/include/QtCore -isystem C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.11.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\IntelliJoo.dir
+  OBJECT_FILE_DIR = CMakeFiles\IntelliJoo.dir
+  TARGET_SUPPORT_DIR = CMakeFiles\IntelliJoo.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target IntelliJoo
@@ -97,7 +107,7 @@ build CMakeFiles/IntelliJoo.dir/MainWindow.cpp.obj: CXX_COMPILER__IntelliJoo_uns
 #############################################
 # Link the executable IntelliJoo.exe
 
-build IntelliJoo.exe: CXX_EXECUTABLE_LINKER__IntelliJoo_Debug CMakeFiles/IntelliJoo.dir/IntelliJoo_autogen/mocs_compilation.cpp.obj CMakeFiles/IntelliJoo.dir/main.cpp.obj CMakeFiles/IntelliJoo.dir/fileHandler.cpp.obj CMakeFiles/IntelliJoo.dir/MainWindow.cpp.obj | C$:/Qt/6.11.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.11.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.11.0/mingw_64/lib/libQt6Core.a || IntelliJoo_autogen IntelliJoo_autogen_timestamp_deps
+build IntelliJoo.exe: CXX_EXECUTABLE_LINKER__IntelliJoo_Debug CMakeFiles/IntelliJoo.dir/IntelliJoo_autogen/mocs_compilation.cpp.obj CMakeFiles/IntelliJoo.dir/main.cpp.obj CMakeFiles/IntelliJoo.dir/fileHandler.cpp.obj CMakeFiles/IntelliJoo.dir/MainWindow.cpp.obj CMakeFiles/IntelliJoo.dir/CreateFileModal.cpp.obj | C$:/Qt/6.11.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.11.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.11.0/mingw_64/lib/libQt6Core.a || IntelliJoo_autogen IntelliJoo_autogen_timestamp_deps
   CONFIG = Debug
   FLAGS = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g
   LINK_LIBRARIES = C:/Qt/6.11.0/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.11.0/mingw_64/lib/libQt6Gui.a  C:/Qt/6.11.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

@@ -22,5 +22,11 @@
   "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/include -isystem C:/Qt/6.11.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.11.0/mingw_64/include -isystem C:/Qt/6.11.0/mingw_64/include/QtCore -isystem C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.11.0/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\IntelliJoo.dir\\MainWindow.cpp.obj -c C:\\Users\\andre\\Documents\\cs\\FinalProject\\Intelijoo\\MainWindow.cpp",
   "file": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.cpp",
   "output": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo.dir/MainWindow.cpp.obj"
+},
+{
+  "directory": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/include -isystem C:/Qt/6.11.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.11.0/mingw_64/include -isystem C:/Qt/6.11.0/mingw_64/include/QtCore -isystem C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.11.0/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\IntelliJoo.dir\\CreateFileModal.cpp.obj -c C:\\Users\\andre\\Documents\\cs\\FinalProject\\Intelijoo\\CreateFileModal.cpp",
+  "file": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/CreateFileModal.cpp",
+  "output": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo.dir/CreateFileModal.cpp.obj"
 }
 ]

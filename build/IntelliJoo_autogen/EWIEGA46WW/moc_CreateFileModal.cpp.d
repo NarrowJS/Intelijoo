@@ -1,11 +1,6 @@
-C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIEGA46WW/moc_MainWindow.cpp: C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.h \
+C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIEGA46WW/moc_CreateFileModal.cpp: C:/Users/andre/Documents/cs/FinalProject/Intelijoo/CreateFileModal.h \
   C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/moc_predefs.h \
-  C:/Qt/6.11.0/mingw_64/include/QtCore/QList \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
-  C:/Qt/6.11.0/mingw_64/include/QtCore/QRect \
-  C:/Qt/6.11.0/mingw_64/include/QtCore/QSize \
-  C:/Qt/6.11.0/mingw_64/include/QtCore/QSizeF \
-  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20functional.h \
@@ -16,7 +11,6 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtCore/q23type_traits.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q23utility.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
-  C:/Qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qalloc.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qanystringview.h \
@@ -65,9 +59,7 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qhashfunctions.h \
-  C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
-  C:/Qt/6.11.0/mingw_64/include/QtCore/qitemselectionmodel.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterator.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qlatin1stringview.h \
@@ -95,7 +87,6 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qrefcount.h \
-  C:/Qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qset.h \
@@ -148,26 +139,19 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qyieldcpu.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/QTransform \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qabstracttextdocumentlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qbrush.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qcolor.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qevent.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qeventpoint.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qfont.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qfontdatabase.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qfontinfo.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qfontmetrics.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qfontvariableaxis.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qglyphrun.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qicon.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qimage.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qinputdevice.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpaintdevice.h \
@@ -175,46 +159,27 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpixmap.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qpointingdevice.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpolygon.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qrawfont.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qrgba64.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qscreen.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qscreen_platform.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qtextlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtransform.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qvector2d.h \
-  C:/Qt/6.11.0/mingw_64/include/QtGui/qvectornd.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QGridLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QInputDialog \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidgetItem \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPlainTextEdit \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemview.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
@@ -224,19 +189,8 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlistview.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlistwidget.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qplaintextedit.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -254,19 +208,15 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_base.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_lockfree_defines.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
@@ -279,15 +229,9 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
@@ -295,7 +239,6 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
@@ -303,31 +246,17 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex.tcc \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_automaton.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_automaton.tcc \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_compiler.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_compiler.tcc \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_constants.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_error.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_executor.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_executor.tcc \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_scanner.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/regex_scanner.tcc \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_base.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
@@ -342,7 +271,6 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_stack.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
@@ -360,7 +288,6 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
@@ -376,10 +303,8 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
@@ -390,30 +315,22 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/optional \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/regex \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stack \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -446,14 +363,10 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
@@ -494,7 +407,4 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Users/andre/Documents/cs/FinalProject/Intelijoo/createfilemodal.h \
-  C:/Users/andre/Documents/cs/FinalProject/Intelijoo/fileHandler.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h

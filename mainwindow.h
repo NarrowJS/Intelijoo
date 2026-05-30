@@ -13,6 +13,9 @@
 #include <QMainWindow>
 #include <QListWidgetItem>
 #include <regex>
+#include <QDialog>
+
+#include "createfilemodal.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -31,6 +34,7 @@ class MainWindow : public QMainWindow {
         QString m_fileText;
         QListWidget *m_fileListWidget;
         QGridLayout *gridLayout;
+        CreateFileModal *m_newFileDialog;
 
     
         
