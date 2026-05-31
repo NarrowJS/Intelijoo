@@ -10,6 +10,7 @@
 
 using namespace std;
 
+// file read and write tutorial: https://www.youtube.com/watch?v=EaHFhms_Shw
 QString loadFile(string filePath)
 {
     QString data = "";
@@ -34,8 +35,6 @@ QListWidget *loadFileList(string folderPath)
 {
     QListWidget *fileList = new QListWidget();
 
-
-
     for (const auto & entry : filesystem::directory_iterator(folderPath))
     {
         std::cout << entry.path() << std:: endl;
@@ -49,7 +48,7 @@ QListWidget *loadFileList(string folderPath)
     return fileList;
 }
 
-
+// reverse of the read file function
 void saveFile(string filePath, string data)
 {
     fstream FileWriter;
@@ -60,9 +59,6 @@ void saveFile(string filePath, string data)
         FileWriter << data;
     }
 }
-
-
-
 
 
 string autoIndent(string filePath)
@@ -136,7 +132,7 @@ string autoIndent(string filePath)
     return data;
 }
 
-
+// c++ system function: https://www.geeksforgeeks.org/cpp/system-call-in-c/
 int compileFile(string path)
 {   
     const string command = "javac "+path;
@@ -149,7 +145,7 @@ int compileFile(string path)
 
     return 0;
 }
-
+// c++ system function: https://www.geeksforgeeks.org/cpp/system-call-in-c/
 int runFile(string path)
 {   
     const string command = "java "+path;
@@ -163,7 +159,7 @@ int runFile(string path)
     return 0;
 }
 
-
+// reverse of the read file function
 void createFile(string fileName, string folderPath)
 {
     ofstream file;
@@ -177,7 +173,4 @@ void createFile(string fileName, string folderPath)
     }
 
     file.close();
-
-
-    
 }

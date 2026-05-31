@@ -33,7 +33,6 @@ class MainWindow : public QMainWindow {
         void onFileListItemClicked(QListWidgetItem *item);
         void updateFileList();
         void runFile();
-        void updateTerminal(std::string text);
     
     private:
         QLineEdit *m_pathInput;
@@ -47,7 +46,4 @@ class MainWindow : public QMainWindow {
         QProcess *m_codeProcess;
         QPushButton *m_runFileBtn;
         TerminalWidget *m_terminalWidget;
-
-    
-        
 };

@@ -2,61 +2,46 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
-
+    // load a default file so it's not blank
     std::string filePath = "../code.txt";
-
 
     QWidget *container = new QWidget();
     gridLayout = new QGridLayout();
 
-    
-
-    QPushButton *saveFileBtn = new QPushButton("Save");
-
     m_textEdit = new QPlainTextEdit();
-
     m_pathInput = new QLineEdit();
 
+    // buttons
+    QPushButton *saveFileBtn = new QPushButton("Save");
     QPushButton *loadFileBtn = new QPushButton("Load");
-
     QPushButton *indentFileBtn = new QPushButton("Indent");
-
     QPushButton *compileFileBtn = new QPushButton("Compile");
-
+    QPushButton *createFileBtn = new QPushButton("+");
+    QPushButton *navigateBackBtn = new QPushButton("<");
     m_runFileBtn = new QPushButton("Run");
 
 
     QPlainTextEdit *newFileNameInput = new QPlainTextEdit("");
-    QPushButton *createFileBtn = new QPushButton("+");
+    
+    
 
+    m_terminalWidget = new TerminalWidget();
+    m_codeProcess = new QProcess(parent);
+
+    // new file creation popup
     m_newFileDialog = new CreateFileModal();
-
-
 
     QString loadedText = loadFile(filePath);
     m_textEdit->setPlainText(loadedText);
     m_textEdit->setMinimumSize(500,400);
-    
-
-
-    // go back one directory
-    QPushButton *navigateBackBtn = new QPushButton("<");
-
-
    
     
-    
-    
-   m_terminalWidget = new TerminalWidget();
-    
 
-
-
+    // file explorer widget
     QWidget *fileList = new QWidget();
-
     m_fileListWidget = loadFileList("../");
 
-
+    // add widgets to the main layout (QGridLayout docs)
     gridLayout->setSizeConstraint(QLayout::SetMaximumSize);
     gridLayout->addWidget(navigateBackBtn, 0, 1);
     gridLayout->addWidget(createFileBtn, 0, 2);
@@ -70,13 +55,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     gridLayout->addWidget(m_terminalWidget, 2, 1, 1,8);
     gridLayout->addWidget(m_fileListWidget, 0,0, 0, 1);
 
-
-
-    
-    
-    m_codeProcess = new QProcess(parent);
-
-
     // Update folder path variable
     QObject::connect(m_pathInput, &QLineEdit::textChanged, this, [this](const QString &newPath) {
         m_folderPath = newPath;
@@ -86,7 +64,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     QObject::connect(m_textEdit, &QPlainTextEdit::textChanged, this, [this]() {
         m_fileText = m_textEdit->toPlainText();
     });
-
 
     // Load file button functionality
     QObject::connect(loadFileBtn, &QPushButton::clicked , this, [this]() {
@@ -100,7 +77,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
         m_textEdit->setPlainText(QString::fromStdString(data));
 
         saveFile(m_filePath.toStdString(), m_fileText.toStdString());
-
     });
 
     // Link the file list item click event to update the current file path
@@ -129,14 +105,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
         std::cout << "started running the file" << std::endl;
         m_runFileBtn->setText("Stop");
        // std::cout << m_codeProcess->readAllStandardOutput().toStdString() << std::endl;
-
-            
-        
     });
 
-    QObject::connect(m_codeProcess, &QProcess::readyRead , this, [this]() {
-     //  std::cout << m_codeProcess->readAllStandardOutput().toStdString() << std::endl;
 
+    // update the terminal widget to reflect process output
+    QObject::connect(m_codeProcess, &QProcess::readyRead , this, [this]() {
+        // std::cout << m_codeProcess->readAllStandardOutput().toStdString() << std::endl;
         QByteArray dataIn = m_codeProcess->readAll();
         
 
@@ -147,66 +121,54 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
         
             QString data;
            */
-           
-            
-            
-           
 
-            std::cout << "data" << std::endl;
-            std::cout << dataIn.toStdString() << std::endl;
-
-            
-            m_terminalWidget->setText(m_terminalWidget->text() + QString::fromStdString(dataIn.toStdString()));
-            
-     
-        
+        // tried doing it through streams but ultimately gave up after too much time, instead the output is loaded in one chunk.
+        std::cout << "data" << std::endl;
+        std::cout << dataIn.toStdString() << std::endl;  
+        m_terminalWidget->setText(m_terminalWidget->text() + QString::fromStdString(dataIn.toStdString()));  
     });
 
-     QObject::connect(m_codeProcess, &QProcess::readyReadStandardError , this, [this]() {
-      //  std::cout << m_codeProcess->readAllStandardError().toStdString() << std::endl;
-
-    
-    });
-
+    // signal the process is over
     QObject::connect(m_codeProcess, &QProcess::finished , this, [this]() {
         m_runFileBtn->setText("Run");
-    
-            
-
-        
-
     });
 
-
-
+    // prompt file creation window
     QObject::connect(createFileBtn, &QPushButton::clicked , this, [this]() {
         m_newFileDialog->show();
     });
 
+    // updates folder path to one directory back
     QObject::connect(navigateBackBtn, &QPushButton::clicked , this, [this]() {
-
        // remove the last folder from the path
         std::string path = m_folderPath.toStdString();
-        m_folderPath = QString::fromStdString(path.substr(0,path.find_last_of('\\')));
-        updateFileList();
 
+        if (path.find_last_of('\\') != -1)
+            m_folderPath = QString::fromStdString(path.substr(0,path.find_last_of('\\'))); // windows file system
+        else
+            m_folderPath = QString::fromStdString(path.substr(0,path.find_last_of('/'))); // everyone else
+        
+        updateFileList();
     });
 
 
+    // handle file creation once the prompt is complete
     QObject::connect(m_newFileDialog, &QInputDialog::textValueSelected , this, [this](const QString &fileName) {
         std::cout << fileName.toStdString() << std::endl;
 
         createFile(fileName.toStdString(), m_folderPath.toStdString());
         updateFileList();
-
     });
 
     container->setLayout(gridLayout);
     setCentralWidget(container);
-    
-
 }
 
+
+
+
+
+// refreshes the list of files
 void MainWindow::updateFileList()
 {
     QListWidget *replacingWidget = loadFileList(m_folderPath.toStdString());
@@ -217,13 +179,15 @@ void MainWindow::updateFileList()
     QObject::connect(m_fileListWidget, &QListWidget::itemClicked, this, onFileListItemClicked);
 }
 
-
+// runs the compiled file
 void MainWindow::runFile()
 {
     QStringList args;
     
+    // pass the the java file as the command argument
     args << m_filePath;
-   
+    
+    // starts the java command process
     m_codeProcess->start(QString::fromStdString("java"), args);
 }
 
@@ -246,7 +210,3 @@ void MainWindow::onFileListItemClicked(QListWidgetItem *item) {
     }
 };
 
-void MainWindow::updateTerminal(std::string text)
-{
-    m_terminalWidget->setText(QString::fromStdString(text));
-}

@@ -1,5 +1,6 @@
 #include "terminalwidget.h";
 
+// code inspired by https://www.geeksforgeeks.org/python/pyqt5-scrollable-label/
 TerminalWidget::TerminalWidget(QWidget *parent) : QScrollArea(parent) {
 
     QWidget *terminalContent = new QWidget(this);

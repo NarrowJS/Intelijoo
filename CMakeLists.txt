@@ -13,7 +13,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
 
-add_executable(IntelliJoo main.cpp fileHandler.cpp MainWindow.cpp CreateFileModal.cpp TerminalWidget.cpp)
+add_executable(IntelliJoo main.cpp fileHandler.cpp MainWindow.cpp CreateFileModal.cpp TerminalWidget.cpp )
 
 
 target_link_libraries(IntelliJoo PRIVATE Qt6::Widgets)
