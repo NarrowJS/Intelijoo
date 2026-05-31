@@ -1,5 +1,7 @@
 C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIEGA46WW/moc_MainWindow.cpp: C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.h \
   C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/moc_predefs.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QByteArray \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QDataStream \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QList \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QProcess \
@@ -212,6 +214,8 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPlainTextEdit \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QScrollArea \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -235,6 +239,7 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qplaintextedit.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qscrollarea.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \

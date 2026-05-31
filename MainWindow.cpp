@@ -36,13 +36,35 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     QString loadedText = loadFile(filePath);
     m_textEdit->setPlainText(loadedText);
     m_textEdit->setMinimumSize(500,400);
+    
 
 
     // go back one directory
     QPushButton *navigateBackBtn = new QPushButton("<");
 
-    m_terminalWidget = new QLabel("terminal eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
-    m_terminalWidget->setMinimumSize(500,100);
+
+   
+    
+    
+    
+    QScrollArea *terminalScrollContainer = new QScrollArea();
+
+     QWidget *terminalContent = new QWidget(terminalScrollContainer);
+     QVBoxLayout *terminalLayout = new QVBoxLayout(terminalContent);
+    terminalScrollContainer->setMinimumSize(500,100);
+    terminalScrollContainer->setWidgetResizable(true);
+    terminalContent->setMinimumSize(500,100);
+    
+    
+
+    m_terminalWidget = new QLabel(terminalContent);
+    
+    m_terminalWidget->setWordWrap(true);
+
+
+    terminalLayout->addWidget(m_terminalWidget);
+    
+
 
 
     QWidget *fileList = new QWidget();
@@ -60,10 +82,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     gridLayout->addWidget(compileFileBtn, 0, 7);
     gridLayout->addWidget(m_runFileBtn, 0, 8);
     gridLayout->addWidget(m_textEdit, 1, 1, 1,8);
-    gridLayout->addWidget(m_terminalWidget, 2, 1, 1,8);
+    gridLayout->addWidget(terminalScrollContainer, 2, 1, 1,8);
     gridLayout->addWidget(m_fileListWidget, 0,0, 0, 1);
 
-
+    terminalScrollContainer->setWidget(m_terminalWidget);
 
     
     
@@ -121,21 +143,53 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     QObject::connect(m_codeProcess, &QProcess::started , this, [this]() {
         std::cout << "started running the file" << std::endl;
         m_runFileBtn->setText("Stop");
-        std::cout << m_codeProcess->readAllStandardOutput().toStdString() << std::endl;
+       // std::cout << m_codeProcess->readAllStandardOutput().toStdString() << std::endl;
+
+            
+        
     });
 
-    QObject::connect(m_codeProcess, &QProcess::readyReadStandardOutput , this, [this]() {
-        std::cout << m_codeProcess->readAllStandardOutput().toStdString() << std::endl;
-        m_terminalWidget->setText(m_codeProcess->readAllStandardOutput());
+    QObject::connect(m_codeProcess, &QProcess::readyRead , this, [this]() {
+     //  std::cout << m_codeProcess->readAllStandardOutput().toStdString() << std::endl;
+
+        QByteArray dataIn = m_codeProcess->readAll();
+        
+
+            /*
+            QDataStream stream(&dataIn, QIODevice::ReadOnly);
+            stream.setVersion(QDataStream::Qt_4_0);
+             
+        
+            QString data;
+           */
+           
+            
+            
+           
+
+            std::cout << "data" << std::endl;
+            std::cout << dataIn.toStdString() << std::endl;
+
+            
+            m_terminalWidget->setText(m_terminalWidget->text() + QString::fromStdString(dataIn.toStdString()));
+            
+     
+        
     });
 
      QObject::connect(m_codeProcess, &QProcess::readyReadStandardError , this, [this]() {
-        std::cout << m_codeProcess->readAllStandardError().toStdString() << std::endl;
-        m_terminalWidget->setText(QString::fromStdString(m_codeProcess->readAllStandardError().toStdString()));
+      //  std::cout << m_codeProcess->readAllStandardError().toStdString() << std::endl;
+
+    
     });
 
     QObject::connect(m_codeProcess, &QProcess::finished , this, [this]() {
         m_runFileBtn->setText("Run");
+    
+            
+
+        
+
     });
 
 
@@ -207,3 +261,7 @@ void MainWindow::onFileListItemClicked(QListWidgetItem *item) {
     }
 };
 
+void MainWindow::updateTerminal(std::string text)
+{
+    m_terminalWidget->setText(QString::fromStdString(text));
+}

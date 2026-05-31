@@ -16,6 +16,10 @@
 #include <QDialog>
 #include <QProcess>
 #include <QLabel>
+#include <QDataStream>
+#include <QByteArray>
+#include <QVBoxLayout>
+#include <QScrollArea>
 
 #include "createfilemodal.h"
 
@@ -28,6 +32,7 @@ class MainWindow : public QMainWindow {
         void onFileListItemClicked(QListWidgetItem *item);
         void updateFileList();
         void runFile();
+        void updateTerminal(std::string text);
     
     private:
         QLineEdit *m_pathInput;
