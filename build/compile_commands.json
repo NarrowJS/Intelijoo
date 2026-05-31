@@ -34,5 +34,11 @@
   "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/include -isystem C:/Qt/6.11.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.11.0/mingw_64/include -isystem C:/Qt/6.11.0/mingw_64/include/QtCore -isystem C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.11.0/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\IntelliJoo.dir\\TerminalWidget.cpp.obj -c C:\\Users\\andre\\Documents\\cs\\FinalProject\\Intelijoo\\TerminalWidget.cpp",
   "file": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/TerminalWidget.cpp",
   "output": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo.dir/TerminalWidget.cpp.obj"
+},
+{
+  "directory": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build",
+  "command": "C:\\Qt\\Tools\\mingw1310_64\\bin\\windres.exe -O coff -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -I C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/include -I C:/Qt/6.11.0/mingw_64/include/QtWidgets -I C:/Qt/6.11.0/mingw_64/include -I C:/Qt/6.11.0/mingw_64/include/QtCore -I C:/Qt/6.11.0/mingw_64/mkspecs/win32-g++ -I C:/Qt/6.11.0/mingw_64/include/QtGui C:\\Users\\andre\\Documents\\cs\\FinalProject\\Intelijoo\\resources.rc CMakeFiles\\IntelliJoo.dir\\resources.rc.obj",
+  "file": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/resources.rc",
+  "output": "C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/IntelliJoo.dir/resources.rc.obj"
 }
 ]

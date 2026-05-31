@@ -12,8 +12,13 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
+if(WIN32)
+    set(EXE_ICON "resources.rc")
+endif()
 
-add_executable(IntelliJoo main.cpp fileHandler.cpp MainWindow.cpp CreateFileModal.cpp TerminalWidget.cpp )
+
+
+add_executable(IntelliJoo main.cpp fileHandler.cpp MainWindow.cpp CreateFileModal.cpp TerminalWidget.cpp ${EXE_ICON})
 
 
 target_link_libraries(IntelliJoo PRIVATE Qt6::Widgets)

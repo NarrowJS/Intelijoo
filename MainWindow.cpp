@@ -5,6 +5,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     // load a default file so it's not blank
     std::string filePath = "../code.txt";
 
+    //https://stackoverflow.com/questions/29284643/how-to-set-an-icon-on-a-main-window-and-action-with-qt
+    this->setWindowIcon(QIcon("../logo.png"));
+
     QWidget *container = new QWidget();
     gridLayout = new QGridLayout();
 
