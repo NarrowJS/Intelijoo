@@ -1,6 +1,6 @@
 
 ## Intelijoo
-!(logo)[logo.png]
+![logo](logo.png)
 A bare-bones Java IDE built with C++ and the QT6 UI Library.
 
 ### Features
