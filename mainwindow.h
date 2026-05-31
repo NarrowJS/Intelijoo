@@ -22,6 +22,7 @@
 #include <QScrollArea>
 
 #include "createfilemodal.h"
+#include "terminalwidget.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -45,7 +46,7 @@ class MainWindow : public QMainWindow {
         CreateFileModal *m_newFileDialog;
         QProcess *m_codeProcess;
         QPushButton *m_runFileBtn;
-        QLabel *m_terminalWidget;
+        TerminalWidget *m_terminalWidget;
 
     
         

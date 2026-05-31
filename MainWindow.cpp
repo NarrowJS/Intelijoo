@@ -47,22 +47,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     
     
     
-    QScrollArea *terminalScrollContainer = new QScrollArea();
-
-     QWidget *terminalContent = new QWidget(terminalScrollContainer);
-     QVBoxLayout *terminalLayout = new QVBoxLayout(terminalContent);
-    terminalScrollContainer->setMinimumSize(500,100);
-    terminalScrollContainer->setWidgetResizable(true);
-    terminalContent->setMinimumSize(500,100);
-    
-    
-
-    m_terminalWidget = new QLabel(terminalContent);
-    
-    m_terminalWidget->setWordWrap(true);
-
-
-    terminalLayout->addWidget(m_terminalWidget);
+   m_terminalWidget = new TerminalWidget();
     
 
 
@@ -82,10 +67,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     gridLayout->addWidget(compileFileBtn, 0, 7);
     gridLayout->addWidget(m_runFileBtn, 0, 8);
     gridLayout->addWidget(m_textEdit, 1, 1, 1,8);
-    gridLayout->addWidget(terminalScrollContainer, 2, 1, 1,8);
+    gridLayout->addWidget(m_terminalWidget, 2, 1, 1,8);
     gridLayout->addWidget(m_fileListWidget, 0,0, 0, 1);
 
-    terminalScrollContainer->setWidget(m_terminalWidget);
+
 
     
     

@@ -292,6 +292,12 @@
 			null
 		],
 		[
+			"C:/Users/andre/Documents/cs/FinalProject/Intelijoo/TerminalWidget.h",
+			"MU",
+			"EWIEGA46WW/moc_TerminalWidget.cpp",
+			null
+		],
+		[
 			"C:/Users/andre/Documents/cs/FinalProject/Intelijoo/fileHandler.h",
 			"MU",
 			"EWIEGA46WW/moc_fileHandler.cpp",
@@ -375,6 +381,11 @@
 		],
 		[
 			"C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/andre/Documents/cs/FinalProject/Intelijoo/TerminalWidget.cpp",
 			"MU",
 			null
 		],

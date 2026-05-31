@@ -507,4 +507,5 @@ C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/IntelliJoo_autogen/EWIE
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/andre/Documents/cs/FinalProject/Intelijoo/createfilemodal.h \
-  C:/Users/andre/Documents/cs/FinalProject/Intelijoo/fileHandler.h
+  C:/Users/andre/Documents/cs/FinalProject/Intelijoo/fileHandler.h \
+  C:/Users/andre/Documents/cs/FinalProject/Intelijoo/terminalwidget.h

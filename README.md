@@ -48,3 +48,4 @@ To run the executable, go to the releases tab and download the latest release wh
 	- Running shell scripts: https://www.geeksforgeeks.org/cpp/system-call-in-c/
 	- Conversion: https://www.geeksforgeeks.org/cpp/convert-string-char-array-cpp/
 	- Create file: https://www.geeksforgeeks.org/cpp/c-program-to-create-a-file/
+	- https://www.geeksforgeeks.org/python/pyqt5-scrollable-label/

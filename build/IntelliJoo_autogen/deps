@@ -717,6 +717,8 @@ IntelliJoo_autogen/timestamp: \
 	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/CreateFileModal.h \
 	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.cpp \
 	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/MainWindow.h \
+	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/TerminalWidget.cpp \
+	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/TerminalWidget.h \
 	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/4.3.2/CMakeCXXCompiler.cmake \
 	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/4.3.2/CMakeRCCompiler.cmake \
 	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/build/CMakeFiles/4.3.2/CMakeSystem.cmake \
@@ -725,5 +727,6 @@ IntelliJoo_autogen/timestamp: \
 	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/fileHandler.cpp \
 	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/fileHandler.h \
 	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/main.cpp \
+	C:/Users/andre/Documents/cs/FinalProject/Intelijoo/terminalwidget.h \
 	c:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/qt.toolchain.cmake \
 	C:/Program\ Files/CMake/bin/cmake.exe
