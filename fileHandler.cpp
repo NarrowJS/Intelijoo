@@ -159,12 +159,34 @@ int runFile(string path)
     return 0;
 }
 
+// https://bluevps.com/blog/how-to-find-os-version-with-a-command-line
+// runs a windows only command and if there's no error, sets the OS as windows
+string getOS()
+{
+    string os = "unix";
+    int res = system("ver");
+
+    // command ran successfully
+    if (res == 0)
+        os = "windows";
+    
+    return os;
+}
+
 // reverse of the read file function
 void createFile(string fileName, string folderPath)
 {
     ofstream file;
 
-    string path = folderPath + "\\" + fileName;
+    string os = getOS();
+    string path;
+    
+    if (os == "windows")
+        path = folderPath + "\\" + fileName;
+    else
+        path = folderPath + "/" + fileName;
+
+    
     file.open(path);
 
     if (!file.is_open())
@@ -174,3 +196,4 @@ void createFile(string fileName, string folderPath)
 
     file.close();
 }
+
